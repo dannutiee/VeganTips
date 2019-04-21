@@ -1,0 +1,602 @@
+@import "variables.less";
+
+.card
+{
+  &__label
+  {
+    padding: 2px 20px;g
+    float: right;
+    background: white;
+  p
+  {
+    margin: 0px;
+    padding:0px;
+    color: #fc9b2b;
+  }
+  }
+  &__body
+  {
+    color: @grey;
+  }
+  &__title
+  {
+    color: @black;
+    text-transform: uppercase;
+  }
+  position: relative;
+  &__awarded
+  {
+    position: absolute;
+    height: 42px;
+    width: 90px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    &__icon
+    {
+      width: 40px;
+      height: 42px;
+      display: block;
+      &.glutenfree_icon_svg{
+        background: @green;
+        background-image: url("../images/gluten-free.svg");
+        .bg-contain();
+        background-size: 80%;
+      }
+      &.kids_icon_svg{
+        background: @orange;
+        background-image: url("../images/boy.svg");
+        .bg-contain();
+        background-size: 80%;
+      }
+    }
+  }
+}
+
+.loginSection, .updateUserAccount
+{
+	background-image:url("../images/bg_index1.jpg");
+	.bg-cover();
+	height: 400px;
+	display: flex;
+	margin-bottom: 50px;
+	&__form
+	{
+  	display: flex;
+  	flex-direction: column;
+  	width: 300px;
+  	padding: 20px;
+  	background: #ffffffcf;
+  	margin: 40px 0;
+	}
+  &__form.update
+  {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-top:-20px;
+  }
+}
+
+input[type="text"], input[type="password"]
+{
+  border: none;
+  border: 1px solid #cbcbcb;
+  height: 35px;
+  border-radius: 5px;
+  margin-top:5px;
+  padding-left: 15px;
+}
+textarea{
+  padding-left: 15px;
+  padding-top:10px;
+  resize: none;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus
+{
+  outline: none;
+}
+input[type="submit"], button.button , input.button
+{
+  background: #fc9b2b;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: uppercase;
+  height: 40px;
+  border:none;
+  border-radius: 5px;
+}
+input[type=checkbox], input[type=radio]
+{
+  margin-right: 10px;
+}
+
+.titleBox
+{
+  text-align:  center;
+  border-bottom: 1px dashed #a4a4a4;
+  margin-bottom:30px;
+}
+h3
+{
+  font-size: 39px;
+  font-family: 'Courgette', cursive;
+  color: #76ad55;
+}
+h4.subtitle
+{
+  color: @green;
+  font-family: 'Courgette', cursive;
+  text-transform: none;
+  font-size: 20px;
+}
+
+.seeMore
+{
+  height:200px;
+  background:#ebebeb;
+  margin-top:50px;
+  flex-direction:initial !important;
+  &__button
+  {
+    background: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    h3
+    {
+      text-align: center;
+      border: 1px dashed;
+      padding: 5px;
+      margin: 0;
+    }
+  }
+  a:hover,a
+  {
+    text-decoration: none;
+  }
+}
+
+.panel_log
+{
+    min-height:700px;
+    margin-bottom: 30px;
+}
+
+#registrationWrapper
+{
+  background-image: url("../images/registration_bg1.jpg");
+  .bg-cover();
+  margin-top:-50px;
+
+  .panel_log
+  {
+    display: flex;
+    justify-content: flex-end;
+    .loginSection__form
+    {
+      width: 400px;
+      h3
+      {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+.error
+{
+  font-size: 12px;
+  color: red;
+}
+
+.logOut, .favourite, .myAccount
+{
+  .bg-contain();
+  height: 50px;
+  width:22px;
+  height: 50px;
+  width: 25px;
+  border-bottom: 5px solid #fc9b2b;
+  border-top: 5px solid #fc9b2b;
+}
+.logOut
+{
+  background-image: url("../images/turn-off.svg");
+}
+.favourite
+{
+  background-image: url("../images/like.svg");
+}
+.myAccount
+{
+  background-image: url("../images/user.svg");
+}
+.categoryNavigation
+{
+  min-height: 90px;
+  margin-top: -35px;
+  text-align: center;
+  border-bottom: 1px dashed #a4a4a4;
+  margin-bottom: 15px;
+  .title
+  {
+    margin-top:15px;
+    margin-bottom: 25px;
+  }
+  .duration
+  {
+    margin-top: 25px;
+  }
+  &__nav
+  {
+    text-transform: uppercase;
+    min-height: 50px;
+    margin-top:25px;
+    .categoryBtn
+    {
+      padding: 10px 20px;
+      margin: 20px 10px;
+      border: 1px dashed #a4a4a4;
+    }
+    .activeCategory
+    {
+      border: 2px dashed @green;
+      color: @green;
+    }
+  }
+  .resultsCount
+  {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.fullrecipe
+{
+  &__title
+  {
+    border-bottom: 1px dashed #a4a4a4;
+    margin-bottom: 20px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .editButton
+  {
+    font-size: 15px;
+    line-height: 39px;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+  &__photo
+  {
+    margin-bottom: 20px;
+    .mainPhoto
+    {
+      width: 100%;
+    }
+  }
+  &__about
+  {
+    padding-top: 20px;
+  }
+  .button
+  {
+    height: 50px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    &:hover
+    {
+      opacity: .8;
+    }
+    &__report
+    {
+      background: white;
+      border: 1px dashed #a4a4a4;
+      color: #a4a4a4;
+    }
+    &__favourite
+    {
+      background: #fc9b2b;
+      color:white;
+    }
+  }
+}
+
+.breadcrumbs
+{
+  background-color: #76ad56;
+  height: 50px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  .container
+  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  &__list
+  {
+    display: flex;
+    margin: 0px;
+    a
+    {
+      text-decoration: none;
+      color: white;
+    }
+    .crumb
+    {
+      margin-right: 15px;
+      color: white;
+      padding-left: 15px;
+      border-left: 1px solid;
+      text-transform: uppercase;
+    }
+    .home
+    {
+      background-image: url("../images/home.svg");
+      .bg-contain();
+      width:20px;
+      height: 20px;
+      border:none;
+      padding: none;
+    }
+  }
+}
+
+.searchEngine
+{
+  form,input
+  {
+    margin:0px;
+  }
+  input[type="text"], input[type="password"]
+  {
+    border: 3px solid @green;
+  }
+  input[type="submit"], button.button, input.button
+  {
+    background: @green;
+    height: 30px;
+    border-right: 1px solid white;
+    border-radius: 0;
+    padding-right: 15px;
+  }
+  input[name="search"]::placeholder
+  {
+    color: #75ad55;
+  }
+  text-align: right;
+}
+
+.addRecipeForm , .updateUserAccount__form
+{
+  input[type="text"], input[type="password"]
+  {
+    height: 40px;
+  }
+  label
+  {
+    text-transform: uppercase;
+  }
+  input, label, textarea , .select2-selection__rendered
+  {
+    width: 100%;
+    background: rgba(245, 245, 245, 0.6);
+    border: none;
+  }
+  .componentRowContainer
+  {
+    display: flex;
+    justify-content: center;
+    .input
+    {
+      margin-right: 10px;
+    }
+    .removeComponent
+    {
+      height: 39px;
+      margin-top: 5px;
+      border: none;
+      background: #ffffff;
+      color: #75ad54;
+      font-weight: bold;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 40px;
+      height: 40px;
+      background-image: url("../images/trash.svg");
+      .bg-contain();
+    }
+  }
+  &__categoryButtons
+  {
+    &:active{
+      box-shadow: none;
+      outline: none;
+      margin: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  input::placeholder, textarea::placeholder
+  {
+    color: #a2a2a2;
+  }
+  input[type="file"]
+  {
+    width: 400px;
+    color: #a2a2a4;
+  }
+  ::-webkit-file-upload-button {
+  background: @green;
+  color: white;
+  padding: 10px;
+  margin-right: 15px;
+  cursor: pointer;
+  }
+  ::-webkit-file-upload-button:focus{
+    outline: none;
+  }
+  .catOption
+  {
+    background: white;
+    border: 1px solid #75ad55;
+    color: #75ad55;
+    &.active{
+      background: #75ad55;
+      color:white;
+    }
+  }
+  .addComponentBtn
+  {
+    background: @green;
+  }
+  .addRecipeBtn
+  {
+    background: @orange;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.cardOverlay
+{
+  height: 100%;
+  opacity:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover
+  {
+    opacity:1;
+    background: rgba(0, 0, 0, 0.19);
+  }
+  &__iconBox
+  {
+    display: flex;
+    justify-content: center;
+  }
+  &__label
+  {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+  }
+  &__icon
+  {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    &-svg
+    {
+      .bg-contain();
+      width: 100%;
+      height: 100%;
+      display: block;
+      &.time{
+        background-image: url("../images/time.svg");
+      }
+      &.clock{
+        background-image: url("../images/clock.svg");
+      }
+    }
+  }
+}
+.userAccount
+{
+  .error
+  {
+    margin-top:10px;
+  }
+  #login{
+    color:#bdbdbd;
+    cursor: not-allowed;
+  }
+  margin-top:-30px;
+  .hello
+  {
+    text-align: center;
+  }
+  .userProfile
+  {
+    margin-top:20px;
+    &__avatar
+    {
+      width: 200px;
+      height: 200px;
+      background-image: url("../images/avatar/default.png");
+      .bg-contain();
+    }
+    &__details
+    {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__score
+    {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
+
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus, .btn.active, .btn:active
+{
+  outline: none;
+  box-shadow: none;
+}
+.select2-container--default .select2-selection--single
+{
+  border: none !important;
+}
+
+.loginSectionContainer
+{
+	margin-top: -50px;
+}
+.components
+{
+  &__table
+  {
+    width: 100%;
+  }
+}
+
+h3.mainLabel
+{
+  font-size: 25px;
+  &__addpadding{
+    padding-left: 15px;
+  }
+}
+
+//select2
+.select2-container *:focus {
+        outline: none;
+}
+.select2-selection__rendered {
+    line-height: 40px !important;
+}
+.select2-container .select2-selection--single {
+    height: 40px !important;
+}
+.select2-selection__arrow {
+    height: 40px !important;
+}

@@ -1,0 +1,25 @@
+@import "variables.less";
+.footer
+{
+    height:50px;
+    display:flex;
+    align-items: center;
+    margin-top: 40px;
+    &__logo
+    {
+        background-image: url("../images/logo.png");
+        height: 30px;
+        .bg-contain();
+        background-position: left;
+    }
+    &__infobar
+    {
+        height: 30px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        p{
+            margin:0px;
+        }
+    }
+}

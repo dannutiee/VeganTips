@@ -1,0 +1,30 @@
+{
+  "name": "vegantips",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-imageoptim": "^1.4.4",
+    "grunt-wiredep": "^3.0.1",
+    "jit-grunt": "^0.10.0",
+    "prettier": "^1.14.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dannutiee@bitbucket.org/dannutiee/vegantips.git"
+  },
+  "author": "Danuta Ludwikowska",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dannutiee/vegantips#readme"
+}

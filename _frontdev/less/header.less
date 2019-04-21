@@ -1,0 +1,83 @@
+@import "variables.less";
+.nav
+{
+	height: 50px;
+	display: flex;
+
+	&__logo
+	{
+		height: 50px;
+		line-height: 50px;
+		background-image: url("../images/logo.png");
+		.bg-contain();
+		padding:10px 0;
+		background-position: initial;
+		background-origin: content-box;
+		a
+		{
+			width: 100%;
+			height: 100%;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+	&__navi
+	{
+		display: flex;
+		justify-content: flex-end;
+		height: 50px;
+		list-style: unset;
+		line-height: 50px;
+		&__corner
+		{
+			background-image: url("../images/corner.png");
+			.bg-contain();
+			background-position: inherit;
+			background-color: #fc9b2b;
+		}
+    .option
+    {
+	    color: white;
+	    margin-left:20px;
+			text-transform: uppercase;
+			cursor:pointer;
+			height: 50px;
+			text-align: center;
+			&.dark
+			{
+				color: @green;
+				font-family: 'Courgette', cursive;
+				text-transform: none;
+				font-size: 20px;
+				&:hover
+				{
+					border-bottom: 5px solid #fc9b2b;
+				}
+			}
+			&:hover
+			{
+				border-bottom: 5px solid;
+			}
+		}
+		a:focus, a:hover
+		{
+			text-decoration: none;
+		}
+	}
+	&__container
+	{
+		box-shadow: 0 5px 5px rgba(0,0,0,.3);
+		z-index: 100;
+		position: relative;
+		margin-bottom: 50px;
+	}
+	&__bg
+	{
+		background: #fc9b2b;
+		height: 50px;
+		position: absolute;
+		top:0px;
+		right: 0;
+
+	}
+}

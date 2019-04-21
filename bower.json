@@ -1,0 +1,22 @@
+{
+  "name": "VeganTips",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Danuta Ludwikowska"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap-css": "^3.3.7",
+    "select2": "~4.0"
+  }
+}

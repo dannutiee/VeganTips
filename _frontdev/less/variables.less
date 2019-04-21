@@ -1,0 +1,91 @@
+// variables
+@grey: #5e5e5e;
+@lightgrey: #7d7d7d;
+@green: #76ad55;
+@black: #222;
+@orange: #fc9b2c;
+@transpGreen: rgba(116, 173, 84, 0.07058823529411765);
+
+// mixins
+
+.bg-cover(){
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.bg-contain(){
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.flexCentered{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.noPadding
+{
+	padding:0px;
+}
+
+.d-flex
+{
+	display: flex;
+}
+
+// default
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+a,p
+{
+	color:@grey;
+}
+td, th
+{
+	font-size: 14px;
+}
+.btn
+{
+	padding: 10px 12px !important;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+{
+	font-weight: lighter;
+}
+button:focus
+{
+	outline: none;
+}
+label
+{
+	margin-bottom:0px;
+	margin-top:5px;
+}
+.btn-info
+{
+	background-color: white;
+	border:none;
+	color: @green;
+	font-family: 'Courgette', cursive;
+	&:hover, &:active , &:focus{
+		background-color: white !important;
+		color: @green !important;
+	}
+}
+.fade
+{
+	opacity: 1;
+}
+.modal.fade .modal-dialog
+{
+	transform: none;
+}
+.modal-dialog
+{
+	max-width: 800px;
+	width: auto;
+}
