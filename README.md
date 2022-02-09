@@ -1,5 +1,5 @@
 # VeganTips
-This project was created during my last semestr of studies.  The goal was to create the webpage wich will fully ( front and back-end) functional. The tehcnologies I've used are : PHP, HTML, CSS, LESS, GRUNT. 
+This project was created during my last semestr of studies. The goal was to create the webpage that will be fully ( front and back-end) functional. The tehcnologies I've used here : PHP, HTML, CSS, LESS, GRUNT. 
 
 - Login page
 ![vegan-00](https://github.com/dannutiee/VeganTips/blob/master/app/images/forReadme/front-page-login.png)
